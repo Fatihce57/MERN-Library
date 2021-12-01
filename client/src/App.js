@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
-import AddBook from './components/AddBook'
-import Books from './components/Books'
+import Navbar from './components/navbar/Navbar'
+import AddBook from './components/addBook/AddBook'
+import Books from './components/books/Books'
 import axios from 'axios'
 import {
   BrowserRouter as Router,
