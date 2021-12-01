@@ -2,10 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const path = require('path');
+// const path = require('path');
 const BookStore = require('./models/BookModel')
 
-const PORT = 5000
+PORT = 5000
 const app = express();
 
 app.use(bodyParser.json());
@@ -49,6 +49,22 @@ app.delete("/delete/:id", (req, res) => {
             console.log(err)
         }
     })
+})
+
+app.put('/lend/:id', async (req, res) => {
+    try {
+        await BookStore.findByIdAndUpdate(req.params.id, { $inc: { quantity: -1 } })
+    } catch (err) {
+        console.log(err);
+    }
+})
+
+app.put('/back/:id', async (req, res) => {
+    try {
+        await BookStore.findByIdAndUpdate(req.params.id, { $inc: { quantity: 1 } })
+    } catch (err) {
+        console.log(err);
+    }
 })
 
 app.listen(PORT, () => {
