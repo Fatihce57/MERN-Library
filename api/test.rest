@@ -1,0 +1,19 @@
+GET http://localhost:5000/books HTTP/1.1
+
+###
+
+POST http://localhost:5000/newbook HTTP/1.1
+content-type: application/json
+
+{
+    "bookName": "1984",
+    "author": "George Orwell",
+    "quantity": 11,
+    "department": "Historical & Criticism",
+    "comments": "My favorite book"
+}
+
+###
+
+DELETE http://localhost:5000/delete/61a6cc17289f7103357da9f6 HTTP/1.1
+content-type: application/json
