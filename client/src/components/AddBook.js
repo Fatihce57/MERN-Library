@@ -43,11 +43,12 @@ export default function AddBook({ book, handleChange, addBook }) {
                             id="floatingSelect"
                             aria-label="Floating label select example"
                         >
-                            <option selected>Departments</option>
+                            <option selected>Department</option>
                             <option value="History & Criticism">History & Criticism</option>
                             <option value="Religious">Religious</option>
                             <option value="Music">Music</option>
                             <option value="Study & Teaching">Study & Teaching</option>
+                            <option value="Classic">Classic</option>
                         </select>
                         <label for="floatingSelect">Select Book</label>
                     </div>

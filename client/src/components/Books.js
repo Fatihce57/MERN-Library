@@ -25,9 +25,9 @@ export default function Book({ books, deleteBook, lendBook, backBook }) {
                                 <td>{book.author}</td>
                                 <td>{book.department}</td>
                                 <td>{book.quantity}</td>
-                              <td><button onClick={()=> deleteBook(book._id)} class="btn btn-primary">DELETE</button></td>
-                              <td><button onClick={()=> lendBook(book._id)} class="btn btn-primary">LEND</button></td>
-                              <td><button onClick={()=> backBook(book._id)} class="btn btn-primary">BACK</button></td>
+                              <td><button onClick={()=> deleteBook(book._id)} className="btn btn-primary">DELETE</button></td>
+                              <td><button onClick={()=> lendBook(book._id)} className="btn btn-primary">LEND</button></td>
+                              <td><button onClick={()=> backBook(book._id)} className="btn btn-primary">BACK</button></td>
                             </tr>
                         )
                     })}
