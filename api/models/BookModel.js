@@ -2,24 +2,24 @@ const mongoose = require('mongoose');
 
 const bookSchema = new mongoose.Schema({
     bookName: {
-        type: string,
+        type: String,
         required: true,
         unique: true,
     },
     author: {
-        type: string,
+        type: String,
         required: true,
     },
     quantity: {
-        type: string,
+        type: String,
         required: true,
     },
     department: {
-        type: string,
+        type: String,
         required: true,
     },
     comments: {
-        type: string,
+        type: String,
     }
 }, { timestamps: true })
 
