@@ -1,0 +1,1 @@
+"proxy":"http://localhost:5000", package.json a ekliyoruz. request islemlerini 500 portunda calisan backende gönderecek

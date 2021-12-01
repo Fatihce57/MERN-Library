@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const BookStore = require('./models/BookModel')
 
-PORT = 5000
+const PORT = 5000
 const app = express();
 
 app.use(bodyParser.json());
