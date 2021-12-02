@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -12,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // mongoose.connection
-mongoose.connect("mongodb+srv://fatih:1978@cluster0.wbgzn.mongodb.net/books?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex: true
