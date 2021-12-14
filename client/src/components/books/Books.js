@@ -4,7 +4,7 @@ import './Books.css'
 export default function Book({ books, deleteBook, lendBook, backBook }) {
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-3">
             <table className="table table-hover table-dark">
                 <thead>
                     <tr>
@@ -17,14 +17,13 @@ export default function Book({ books, deleteBook, lendBook, backBook }) {
                         <th scope="col" colSpan="3">Process</th>
                     </tr>
                 </thead>
-                <tbody>
-                   
+                <tbody>                   
                     {books.map((book, index) => {
                         return (
                             <tr key={index}>
                                 <td>{book._id}</td>
-                                <td><img style={{widtd: '15vw', height:'10vh'}} src={book.bookImage} alt="book" /></td>
-                                <td data-toggle="tooltip" data-placement="top" title={book.comments}>{book.bookName}</td>                             
+                                <td data-toggle="tooltip" data-placement="top" title={book.comments}><img style={{width: '4vw', height:'10vh'}} src={book.bookImage} alt="book" /></td>
+                                <td>{book.bookName}</td>                             
                                 <td>{book.author}</td>
                                 <td>{book.department}</td>
                                 <td>{book.quantity}</td>
