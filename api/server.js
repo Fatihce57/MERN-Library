@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // const path = require('path');
 const BookStore = require('./models/BookModel')
 
-PORT = 5000
+PORT = 3500
 const app = express();
 
 app.use(bodyParser.json());
@@ -29,6 +29,7 @@ app.get("/books", (req, res) => {
 app.post("/newbook", async (req, res) => {
     try {
         const newBook = new BookStore({
+            bookImage: req.body.bookImage,
             bookName: req.body.bookName,
             author: req.body.author,
             quantity: req.body.quantity,

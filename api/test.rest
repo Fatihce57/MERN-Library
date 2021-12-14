@@ -2,10 +2,11 @@ GET http://localhost:5000/books HTTP/1.1
 
 ###
 
-POST http://localhost:5000/newbook HTTP/1.1
+POST http://localhost:3500/newbook HTTP/1.1
 content-type: application/json
 
 {
+    "bookImage": "https://kbimages1-a.akamaihd.net/Images/6faa402f-1a95-4897-93ff-8286cbe0e94f/255/400/False/image.jpg",
     "bookName": "1984",
     "author": "George Orwell",
     "quantity": 11,
