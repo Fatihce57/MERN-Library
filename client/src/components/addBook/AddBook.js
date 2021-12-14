@@ -8,6 +8,16 @@ export default function AddBook({ book, handleChange, addBook }) {
                 <form style={{ padding: '20px 20px 10px 10px' }}>
                     <div className="form-floating mb-3">
                         <input
+                            type="text" value={book.bookImage} onChange={handleChange}
+                            name="bookImage"
+                            className="form-control"
+                            id="floatingInput"
+                            placeholder="bookImage"
+                        />
+                        <label for="floatingInput">Book Image(link)</label>
+                    </div>
+                    <div className="form-floating mb-3">
+                        <input
                             type="text" value={book.bookName} onChange={handleChange}
                             name="bookName"
                             className="form-control"
@@ -50,6 +60,7 @@ export default function AddBook({ book, handleChange, addBook }) {
                             <option value="Music">Music</option>
                             <option value="Study & Teaching">Study & Teaching</option>
                             <option value="Classic">Classic</option>
+                            <option value="Classic">Other</option>
                         </select>
                         <label for="floatingSelect">Select Book</label>
                     </div>

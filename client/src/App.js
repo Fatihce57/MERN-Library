@@ -13,6 +13,7 @@ import {
 function App() {
   const [books, setBooks] = useState([])
   const [book, setBook] = useState({
+    bookImage: '',
     bookName: '',
     author: '',
     quantity: '',
@@ -43,6 +44,7 @@ function App() {
   const addBook = (e) => {
     e.preventDefault()
     const newBook = {
+      bookImage: book.bookImage,
       bookName: book.bookName,
       author: book.author,
       quantity: book.quantity,
@@ -53,6 +55,7 @@ function App() {
     axios.post('/newbook', newBook)
     alert(`The Book ${book.bookName} is added`)
     setBook({
+      bookImage: '',
       bookName: '',
       author: '',
       quantity: '',

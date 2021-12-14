@@ -9,6 +9,7 @@ export default function Book({ books, deleteBook, lendBook, backBook }) {
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
+                        <th scope="col">Book</th>
                         <th scope="col">Book Name</th>
                         <th scope="col">Author</th>
                         <th scope="col">Department</th>
@@ -22,7 +23,8 @@ export default function Book({ books, deleteBook, lendBook, backBook }) {
                         return (
                             <tr key={index}>
                                 <td>{book._id}</td>
-                                <td data-toggle="tooltip" data-placement="top" title={book.comments}>{book.bookName}</td>
+                                <td><img style={{widtd: '15vw', height:'10vh'}} src={book.bookImage} alt="book" /></td>
+                                <td data-toggle="tooltip" data-placement="top" title={book.comments}>{book.bookName}</td>                             
                                 <td>{book.author}</td>
                                 <td>{book.department}</td>
                                 <td>{book.quantity}</td>
@@ -34,7 +36,6 @@ export default function Book({ books, deleteBook, lendBook, backBook }) {
                     })}
                 </tbody>
             </table>
-
         </div>
     )
 }
