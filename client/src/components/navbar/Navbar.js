@@ -50,7 +50,7 @@ function Navbar() {
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="history">
                     History & Criticism
                   </Link>
                 </li>
@@ -58,7 +58,7 @@ function Navbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="religious">
                     Religious
                   </Link>
                 </li>
@@ -66,7 +66,7 @@ function Navbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="music">
                     Music
                   </Link>
                 </li>
@@ -74,7 +74,7 @@ function Navbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="study">
                     Study & Teaching
                   </Link>
                 </li>
@@ -82,7 +82,7 @@ function Navbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="classic">
                     Classic
                   </Link>
                 </li>
@@ -90,7 +90,7 @@ function Navbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="other">
                     Other
                   </Link>
                 </li>
