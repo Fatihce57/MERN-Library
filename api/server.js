@@ -13,7 +13,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// mongoose.connection
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
